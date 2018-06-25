@@ -1,0 +1,70 @@
+#include "../patterns.h"                                                
+PATTERN( Write_CP3_GDFLG, logic )                                          
+%%VECDEF VDD_PAD, CMS_PAD, XT1_PAD, GPIO4_PAD, GPIO5_PAD, GPIO6_PAD     
+                                                                        
+//     		VCXGGG                                                  
+//     		DMTPPP                                                  
+//     		DS1III                                                  
+//     		___OOO                                                  
+//     		PPP456                                                  
+//     		AAA___                                                  
+//     		DDDPPP                                                  
+//     		   AAA                                                  
+//     		   DDD  
+
+                                                                 
+									 *10X000*TS1,RPT 1000;  //cp3_flg_write1_st::
+                   *10X100*RPT 1000;
+                   *10X110*;   //STROBE
+                   *10X101*;
+                   *10X101*;
+                   *10X101*;
+                   *10X100*;
+                   *10X100*;   //EncDecEn mode
+                   *10X100*;   //DownLoadKey 
+                   *10X101*;   //EncDecEn
+                   *10X10X*RPT 10;                   
+
+                   *10X110*;   //STROBE
+                   *10X100*;
+                   *10X101*;
+                   *10X100*;
+                   *10X100*;
+                   *10X100*;   //Addr mode
+                   *10X101*;   //Addr0 
+                   *10X101*;   //Addr1
+                   *10X101*;   //Addr2
+                   *10X101*;   //Addr3
+                   *10X101*;   //Addr4
+                   *10X101*;   //Addr5
+                   *10X101*;   //Addr6
+                   *10X101*;   //Addr7
+                   *10X101*;   //Addr8
+                   *10X101*;   //Addr9
+                   *10X101*;   //Addr10
+                   *10X101*;   //Addr11
+                   *10X101*;   //Addr12
+                   *10X101*;   //Addr13
+                   *10X100*;   //Addr14
+                   *10X101*;   //Addr15 0xBFFF
+                   *10X10X*RPT 10;
+                   
+                   *10X110*;   //STROBE
+                   *10X101*;
+                   *10X100*;
+                   *10X101*;
+                   *10X100*;
+                   *10X100*;   //Prog mode
+                   *10X101*;   //Data0 
+                   *10X101*;   //Data1 
+                   *10X100*;   //Data2 
+                   *10X100*;   //Data3 
+                   *10X101*;   //Data4 
+                   *10X101*;   //Data5        
+                   *10X100*;   //Data6 
+                   *10X100*;   //Data7  0x5A
+cp3_flg_write2_st::*10X10X*RPT 11000;                   
+cp3_flg_write2_sp::*10X10X*STOP;
+                                                                                                                                    
+                   
+}                                                  

@@ -1,0 +1,44 @@
+﻿生成启动时间为 2018/5/16 15:49:02。
+     1>项目“C:\Users\LENOVO\Desktop\Ultra_Demo\tp_auto_Win32.vcxproj”在节点 2 上(Build 个目标)。
+     1>PreBuildEvent:
+         copy "D:\Script\Engineering\M2\CL_Driver\CL_Improve\CL_Improve.h" "C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\"
+         copy "D:\Script\Engineering\M2\CL_Driver\CL_Improve\CL_Improve.dll" "C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\"
+         copy "D:\Script\Engineering\M2\CL_Driver\CL_Improve\CL_Improve.lib" "C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\"
+         :VCEnd
+         已复制         1 个文件。
+         已复制         1 个文件。
+         已复制         1 个文件。
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\LENOVO\Desktop\Ultra_Demo\ /ID:\Drivers\Head_File /ID:\Drivers /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D NO_WARN_MBCS_MFC_DEPRECATION /D _USING_V110_SDK71_ /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /arch:SSE /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\\" /Fd"C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt seq_and_bin.cpp
+         seq_and_bin.cpp
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.lib" /MACHINE:X86 C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\MultiDialog.res
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\driver.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\fdatalog.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\hello_MAG2.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\host_begin.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\pin_assignments.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\pin_lists.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\pin_scramble.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\seq_and_bin.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\site_begin.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\tblks_ac.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\tblks_dc.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\tester.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\test_begin.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\test_end.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\timer.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\timing.obj
+         C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\voltage.obj
+         Debug\CL_Improve.lib
+            正在创建库 C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.lib 和对象 C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.exp
+         tp_auto_Win32.vcxproj -> C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.exe
+       PostBuildEvent:
+         copy "C:\Users\LENOVO\Desktop\Ultra_Demo\Debug\Ultra_Demo.exe" "C:\nextest\_production\testprogram"
+         :VCEnd
+         已复制         1 个文件。
+     1>已完成生成项目“C:\Users\LENOVO\Desktop\Ultra_Demo\tp_auto_Win32.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.52

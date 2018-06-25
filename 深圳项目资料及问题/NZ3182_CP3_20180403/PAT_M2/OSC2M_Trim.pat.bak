@@ -1,0 +1,34 @@
+#include "../patterns.h"                                                
+PATTERN( OSC2M_Trim, logic )                                          
+%%VECDEF VDD_PAD, CMS_PAD, XT1_PAD, GPIO4_PAD, GPIO5_PAD, GPIO6_PAD     
+                                                                        
+//     		VCXGGG                                                  
+//     		DMTPPP                                                  
+//     		DS1III                                                  
+//     		___OOO                                                  
+//     		PPP456                                                  
+//     		AAA___                                                  
+//     		DDDPPP                                                  
+//     		   AAA                                                  
+//     		   DDD  
+   
+                 
+                *10X000*TS1,RPT 1000;  
+                *10X100*RPT 1000;
+                *10X110*;   //STROBE
+                *10X101*;
+                *10X101*;
+                *10X100*;
+                *10X101*;
+                *10X100*;   //OSC2M mode
+                *10X101*;   //OSCEN 
+osc2m_trim_st:: *10X100*;   //OSC TRIM0-------------
+                *10X100*;   //OSC TRIM1
+                *10X100*;   //OSC TRIM2
+                *10X101*;   //OSC TRIM3   
+
+                *10X10X*RPT 10; 
+                *10X10X*STOP;
+                                                                                                                                    
+                   
+}                                                  

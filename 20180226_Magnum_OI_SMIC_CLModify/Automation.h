@@ -1,0 +1,78 @@
+#ifndef _AUTOMATION_H_
+#define _AUTOMATION_H_
+#define D_SITES_IN_PROBER		5120
+#define D_TOTAL_DUTS_ON_WAFER	0x50000
+
+struct DutInfo {
+	int x;
+	int y;
+	int HardBin;
+	int SoftBin;
+	int DutNumber;
+	int PassFail;
+	int TestTime;
+};
+
+extern void MyTimer(CString str);
+
+EXTERN_BOOL_VARIABLE( VERBOSITY )
+EXTERN_BOOL_VARIABLE( OFFLINE_DEBUG )
+EXTERN_BOOL_VARIABLE( ONLINE_DEBUG )
+EXTERN_BOOL_VARIABLE( TT_PROFILE )
+
+EXTERN_INT_VARIABLE( MAX_DUTS ) 
+EXTERN_INT_VARIABLE( MAX_PH_SITES ) 	
+
+EXTERN_INT_VARIABLE( iTOTAL_TEST_TIME_GMT ) 
+EXTERN_INT_VARIABLE( SITE_PER_CONTROLLER_NUM ) 
+EXTERN_INT_VARIABLE( MAX_DUT_NUM_PER_SITE ) 
+EXTERN_INT_VARIABLE( BASE_X_COORD ) 
+EXTERN_INT_VARIABLE( BASE_Y_COORD ) 
+
+EXTERN_UINT64_VARIABLE(ui_SiteMask );
+
+EXTERN_BOOL_VARIABLE( AutoTesting );	
+EXTERN_VOID_VARIABLE( AutoTestLoop );
+
+EXTERN_CSTRING_VARIABLE( WAFER_START_DATE) ;
+EXTERN_CSTRING_VARIABLE( WAFER_END_DATE) ;
+EXTERN_CSTRING_VARIABLE( WAFER_START_TIME) ;
+EXTERN_CSTRING_VARIABLE( WAFER_END_TIME) ;
+EXTERN_CSTRING_VARIABLE( WAFER_END_TIME_dos) ;
+EXTERN_CSTRING_VARIABLE( TOTAL_WAFER_TIME_GMT) ;
+EXTERN_CSTRING_VARIABLE( WFR_ID) ;
+
+EXTERN_CSTRING_VARIABLE(RAWDATA_DATE);
+EXTERN_CSTRING_VARIABLE(RAWDATA_TIME);
+EXTERN_CSTRING_VARIABLE(RETESTDATA_DATE);
+EXTERN_CSTRING_VARIABLE(RETESTDATA_TIME);
+
+extern int iDutToSite[];
+
+extern CString cRawDataFileName;
+extern CString cRawDataFileNameToServer;
+extern CString cRawDataFileDir;	
+extern DutInfo sDutInfo[];
+extern int sDutInfoNum;	
+extern int total_pass;	
+extern int total_fail;	
+extern int iSites_index[];	//should change to IntArray to fix problem with skip duts  
+
+extern CDriver		TheDevice;
+
+extern devinfo	DevInfo;
+
+
+
+// GPIB table
+
+// GPIB error
+#define GPIB_ERR		1
+// GPIB timeout
+#define GPIB_TIMEOUT	2
+
+void read_ini();
+
+int bits(__int64 val);
+
+#endif _AUTOMATION_H_

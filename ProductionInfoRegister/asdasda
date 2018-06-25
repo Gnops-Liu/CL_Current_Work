@@ -1,0 +1,35 @@
+SMIC_Prod_ID:
+Test_Program_Package:
+Test_Program_Directory:D:\TestProgram
+Tester_Directory:C:\nextest\_production\tester
+Test_flow:
+Sort_ID:
+Test_Program:
+Probe_Card_Setup_Name:
+Notch_side:D
+Switch_Notch:270
+Bin_Definition_File:
+Grid_Xmax:
+Grid_Ymax:
+Grid_Xmin:
+Grid_Ymin:
+shift_X:
+shift_Y:
+Fab_Site:SMICFAB2
+Test_Site:SMICTEST
+Probe_Card_ID:
+WM_ORIGIN:TOP_LEFT
+Load_Board_ID:
+ROM_Code:
+X Die Size:
+Y Die Size:
+X_Street:
+Y_Street:
+Customer_Code:
+Customer_PartID:
+Gross_Die:
+Prr_Check_Number:
+Magnum_UI_Version:h4.3.0.4
+Datalog_Setup:C:\nextest\_production\datalog_setup
+ReleaseTester:
+ServerDirectory:Z:\SMIC\Testing\TDS\share\production\rawdata

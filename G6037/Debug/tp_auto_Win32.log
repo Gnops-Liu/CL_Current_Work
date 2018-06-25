@@ -1,0 +1,22 @@
+﻿Build started 5/18/2018 2:22:06 PM.
+     1>Project "D:\user\Colin\Ultra_Demo\tp_auto_Win32.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         copy "D:\Script\Engineering\M2\CL_Driver\CL_Improve\CL_Improve.h" "D:\user\Colin\Ultra_Demo\Debug\"
+         copy "D:\Script\Engineering\M2\CL_Driver\CL_Improve\CL_Improve.dll" "D:\user\Colin\Ultra_Demo\Debug\"
+         copy "D:\Script\Engineering\M2\CL_Driver\CL_Improve\CL_Improve.lib" "D:\user\Colin\Ultra_Demo\Debug\"
+         :VCEnd
+                 1 file(s) copied.
+         The process cannot access the file because it is being used by another process.
+                 0 file(s) copied.
+                 1 file(s) copied.
+       Link:
+         tp_auto_Win32.vcxproj -> D:\user\Colin\Ultra_Demo\Debug\Ultra_Demo.exe
+       PostBuildEvent:
+         copy "D:\user\Colin\Ultra_Demo\Debug\Ultra_Demo.exe" "C:\nextest\_production\testprogram"
+         :VCEnd
+                 1 file(s) copied.
+     1>Done Building Project "D:\user\Colin\Ultra_Demo\tp_auto_Win32.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.14

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-6.0.dtd">
+<!-- eric6 tasks file for project ProductionInfoRegister -->
+<!-- Saved: 2018-03-26, 13:42:04 -->
+<Tasks version="6.0">
+  <ProjectScanFilter></ProjectScanFilter>
+  <Task priority="1" completed="False" type="3" uid="{393085dd-3db5-4900-b723-b1b5bb03e82b}">
+    <Summary>NOTE: Disable or Enable</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>95</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{2efb822a-2a04-4eab-83c3-296a731f32e8}">
+    <Summary>NOTE:style</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>138</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{603bee70-464e-4515-af66-7e111e61bc71}">
+    <Summary>NOTE: Read Necessary Info From Server</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>142</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{dd7d9583-4d3f-46e3-bb80-4959e37b1ecf}">
+    <Summary>NOTE: TABLE FUNC</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>462</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{e63554a1-dd4a-48b5-a92e-99a491746abd}">
+    <Summary>NOTE: CHECK STATE</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>533</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{0b8f31aa-ae11-4f02-81fb-0a9ff037dcf6}">
+    <Summary>NOTE: MainWindow Logic from here</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>537</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{be064d40-f2f3-47c9-8c87-3909409f6be6}">
+    <Summary>NOTE: [WIN]CONFIRM WINDOW</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>570</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{59d09a88-9967-401e-bef5-214157108ab9}">
+    <Summary>NOTE: [WIN]LOGIN DIALOG</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>574</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{6651f606-f3c4-4968-b02b-c82ab99f9679}">
+    <Summary>NOTE: [WIN]MESSAGE BOX</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>579</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="3" uid="{a0111f89-8fbf-4b7b-8d61-ad0e612641e4}">
+    <Summary>NOTE: Start From here</Summary>
+    <Description></Description>
+    <Created>2018-03-26, 13:42:01</Created>
+    <Resource>
+      <Filename>Ui_Main.py</Filename>
+      <Linenumber>587</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

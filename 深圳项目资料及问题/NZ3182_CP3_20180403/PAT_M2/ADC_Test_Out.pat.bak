@@ -1,0 +1,226 @@
+#include "../patterns.h"
+PATTERN( ADC_Test_Out, logic )
+%%VECDEF VDD_PAD, CMS_PAD, XT1_PAD, GPIO4_PAD, GPIO5_PAD, GPIO6_PAD
+
+//     		VCXGGG
+//     		DMTPPP
+//     		DS1III
+//     		___OOO
+//     		PPP456
+//     		AAA___
+//     		DDDPPP
+//     		   AAA
+//     		   DDD  
+
+
+
+SET_DEC_FILE "NZ3182_CP.dec" 
+HEADER               
+        VDD_PAD,CMS_PAD,XT1_PAD,GPIO4_PAD,GPIO5_PAD,GPIO6_PAD,ADC_PAD; 
+                     
+SPM_PATTERN ( ADC_Test_Out ) { 
+                     
+                     
+//
+//               VCXGGG
+//               DMTPPP
+//               DS1III
+//               ___OOO
+//               PPP456
+//               AAA___
+//               DDDPPP
+//                  AAA
+//                  DDD
+//                
+//                
+//                
+//               
+                 
+                 
+                 
+                *10X0001*TS3;  
+                *10X1001*RPT 1000;
+                *10X1101*;   //STROBE
+                *10X1011*;            
+                *10X1011*;            
+                *10X1001*;            
+                *10X1001*;            
+                *10X1011*;   //ADCCtrl mode       
+                *10X1001*;   //ADCEn             
+                *10X1001*;   //ADCStart           
+                *10X1001*;   //ADCBuff0           
+                *10X1001*;   //ADCBuff1           
+                *10X1001*;   //TbgEn            
+                *10X10X1*RPT 16;   //            
+                *10X10X1*;   //ADCDone            
+                *10X10X1*;   //ADCDat0            
+                *10X10X1*;   //ADCDat1            
+                *10X10X1*;   //ADCDat2            
+                *10X10X1*;   //ADCDat3            
+                *10X10X1*;   //ADCDat4            
+                *10X10X1*;   //ADCDat5            
+                *10X10X1*;   //ADCDat6            
+                *10X10X1*;   //ADCDat7            
+                *10X10X1*;   //ADCDat8            
+                *10X10X1*;   //ADCDat9  
+
+
+                *10X1101*;   //STROBE
+                *10X1011*;            
+                *10X1011*;            
+                *10X1001*;            
+                *10X1001*;            
+                *10X1011*;   //ADCCtrl mode       
+                *10X1011*;   //ADCEn             
+                *10X1011*;   //ADCStart           
+                *10X1001*;   //ADCBuff0           
+                *10X1001*;   //ADCBuff1           
+                *10X1011*;   //TbgEn            
+                *10X10X1*RPT 16;   //            
+                *10X10X1*;   //ADCDone            
+                *10X10X1*;   //ADCDat0            
+                *10X10X1*;   //ADCDat1            
+                *10X10X1*;   //ADCDat2            
+                *10X10X1*;   //ADCDat3            
+                *10X10X1*;   //ADCDat4            
+                *10X10X1*;   //ADCDat5            
+                *10X10X1*;   //ADCDat6            
+                *10X10X1*;   //ADCDat7            
+                *10X10X1*;   //ADCDat8            
+                *10X10X1*;   //ADCDat9            
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone            
+                *10X10Z1*;   //ADCDat0            
+                *10X10Z1*;   //ADCDat1            
+                *10X10Z1*;   //ADCDat2            
+                *10X10Z1*;   //ADCDat3            
+                *10X10Z1*;   //ADCDat4            
+                *10X10Z1*;   //ADCDat5            
+                *10X10Z1*;   //ADCDat6            
+                *10X10Z1*;   //ADCDat7            
+                *10X10Z1*;   //ADCDat8            
+                *10X10Z1*;   //ADCDat9 data0
+
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data1
+
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data2
+                
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data3
+                
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data4                
+                
+                *10X10X1*RPT 2;
+/*                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data5                
+                
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data6                
+
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data7                
+
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data8
+                
+                *10X10X1*RPT 2;
+                *10X10X1*;   //ADCDone 
+                *10X10Z1*;   //ADCDat0
+                *10X10Z1*;   //ADCDat1
+                *10X10Z1*;   //ADCDat2
+                *10X10Z1*;   //ADCDat3
+                *10X10Z1*;   //ADCDat4
+                *10X10Z1*;   //ADCDat5
+                *10X10Z1*;   //ADCDat6
+                *10X10Z1*;   //ADCDat7
+                *10X10Z1*;   //ADCDat8
+                *10X10Z1*;   //ADCDat9 data9                
+ 
+*/
+
+                *10X10X1*STOP;
+                                                                                                                                    
+                   
+}                                                  

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-5.1.dtd">
+<!-- eric project file for project ProductionInfoRegister -->
+<!-- Saved: 2018-03-16, 17:30:50 -->
+<!-- Copyright (C) 2018 Colin Liu, Gnops.Liu@outlook.com -->
+<Project version="5.1">
+  <Language>en_US</Language>
+  <Hash>8548d68dc09fbb4de950162d7e2183da7dd4d600</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Version>0.1</Version>
+  <Author>Colin Liu</Author>
+  <Email>Gnops.Liu@outlook.com</Email>
+  <Eol index="0"/>
+  <Sources>
+    <Source>Ui_Confirm_Window.py</Source>
+    <Source>Ui_FileDialog.py</Source>
+    <Source>Ui_LogIn.py</Source>
+    <Source>Ui_Main.py</Source>
+    <Source>Ui_MessageBox.py</Source>
+    <Source>Ui_ProdctionInfoRegister.py</Source>
+    <Source>__init__.py</Source>
+  </Sources>
+  <Forms>
+    <Form>Confirm_Window.ui</Form>
+    <Form>LogIn.ui</Form>
+    <Form>MessageBox.ui</Form>
+    <Form>ProdctionInfoRegister.ui</Form>
+  </Forms>
+  <MainScript>Ui_Main.py</MainScript>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.e4p" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.md" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.proto" type="PROTOCOLS"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.rst" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.txt" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+    <FiletypeAssociation pattern="README" type="OTHERS"/>
+    <FiletypeAssociation pattern="README.*" type="OTHERS"/>
+  </FiletypeAssociations>
+</Project>

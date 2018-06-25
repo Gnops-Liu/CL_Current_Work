@@ -1,0 +1,45 @@
+SET_DEC_FILE "NZ3182_CP.dec" 
+HEADER               
+        VDD_PAD,CMS_PAD,XT1_PAD,GPIO4_PAD,GPIO5_PAD,GPIO6_PAD; 
+                     
+SPM_PATTERN ( VDDLDO_OUT ) { 
+                     
+                     
+//
+//               VCXGGG
+//               DMTPPP
+//               DS1III
+//               ___OOO
+//               PPP456
+//               AAA___
+//               DDDPPP
+//                  AAA
+//                  DDD
+//                
+//                
+//                
+//               
+                 
+                 
+                 
+                *10X000*TS1,RPT 1000;  
+                *10X100*RPT 1000;
+                *10X110*;   //STROBE
+                *10X100*;
+                *10X101*;
+                *10X101*;
+                *10X100*;
+                *10X101*;   //TestSWSel mode
+                *10X100*;   //SW0 
+                *10X100*;   //SW1
+                *10X101*;   //SW2
+                *10X100*;   //SW3       
+                *10X100*;   //SW3  5¡¯b00100£ºVDDLDO
+                *10X101*;   //Sel0
+                *10X100*;   //Sel1
+                *10X100*;   //Sel2 
+                *10X10X*RPT 10; 
+                *10X10X*STOP;
+                                                                                                                                    
+                   
+}                                                  

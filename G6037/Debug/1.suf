@@ -1,0 +1,46 @@
+version              1
+show_pins            true
+show_pinlists        false
+pin_select_mode      RegExp
+pin_select_value     .+
+input_source         History
+input_first          0
+input_length         512
+input_auto           true
+lec_mode             Counter
+lec_counter_1        VC4
+lec_counter_2        VC1
+lec_counter_3        VC2
+lec_counter_4        VC3
+pattern_mode         Finish
+pattern_select       p_BG
+exec_mode            Pattern
+header_select        Index
+header_select        MarLabel
+header_select        MarPattern
+header_select        Time
+signal_select        GPIO4 T
+signal_select        GPIO5 T
+trigger_enable       true
+trigger_delay        0
+trigger_mode         m1_p1
+trigger_mar_base     .absolute.
+trigger_var_base     .absolute.
+CycleCounter 	GreaterOrEqual 0
+VarCounter4 	ForceTrue 0
+VarCounter1 	ForceTrue 0
+MarXAddress 	ForceTrue 0
+VarCounter3 	ForceTrue 0
+VarAddress 	ForceTrue 0
+MarAddress 	ForceTrue 0
+VarCounter2 	ForceTrue 0
+MarYAddress 	ForceTrue 0
+strobe_mode          Scope
+strobe_x_steps       10
+strobe_y_min         0
+strobe_y_max         5
+strobe_y_steps       10
+strobe_la_high       5
+strobe_la_low        0
+strobe_wave_create   0
+strobe_smoothing     0

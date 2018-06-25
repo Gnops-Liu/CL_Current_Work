@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66C3348F-00F3-49AA-A1D7-3B254E654BA3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mintestprog</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectName>NZ3182_CP3</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "C:\nextest\_production\testprogram"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="fdatalog.h" />
+    <ClInclude Include="patterns.h" />
+    <ClInclude Include="pin_lists.h" />
+    <ClInclude Include="protos.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="tester.h" />
+    <ClInclude Include="timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+    <Text Include="RevisionHistory.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="driver.cpp" />
+    <ClCompile Include="fdatalog.cpp" />
+    <ClCompile Include="host_begin.cpp" />
+    <ClCompile Include="PAT_M2\ADC_PAD_IN_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\ADC_PAD_IN_Vts_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\ADC_Test_Out_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\ADC_Test_Out_Vts_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\CmdTest2_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\CmdTest_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\CP_CLK_SEL_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\EotStandby_Mode_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\EOT_INIT_CLK_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Halver_on_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\IP_Trim_Read_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\IP_Trim_Read_Vref_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\IP_Trim_Write1_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\IP_Trim_Write2_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Off_Margin_Read_Array_FF2_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Off_Margin_Read_Array_FF_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Default_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_Code10_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_Code11_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_Code12_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_Code13_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_Code8_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_Code9_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\OSC2M_Trim_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\POWER_CHANGE_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Read_CP3_GDFLG_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\read_normal_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\TS_On_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_1p8_Trim_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_2D2_Trim_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code10_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code11_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code12_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code13_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code14_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code15_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code16_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code17_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code1_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code2_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code3_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code4_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code5_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code6_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code7_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code8_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Code9_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_Default_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\VDDLDO_OUT_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_Default_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code10_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code11_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code12_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code5_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code6_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code7_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code8_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_emulation_trim_Code9_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_OUT_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vref_Trim_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Vts_OUT_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\Write_CP3_GDFLG_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\write_normal_MAG2.CPP" />
+    <ClCompile Include="PAT_M2\XT1_CLK1_MAG2.CPP" />
+    <ClCompile Include="pin_assignments.cpp" />
+    <ClCompile Include="pin_lists.cpp" />
+    <ClCompile Include="pin_scramble.cpp" />
+    <ClCompile Include="seq_and_bin.cpp" />
+    <ClCompile Include="site_begin.cpp" />
+    <ClCompile Include="tblks_ac.cpp" />
+    <ClCompile Include="tblks_dc.cpp" />
+    <ClCompile Include="tester.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="timing.cpp" />
+    <ClCompile Include="voltage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="APFP10.INI" />
+    <None Include="MultiDialog.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MultiDialog.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <patcom Include="PAT_M2\ADC_PAD_IN.pat" />
+    <patcom Include="PAT_M2\ADC_PAD_IN_Vts.pat" />
+    <patcom Include="PAT_M2\ADC_Test_Out.pat" />
+    <patcom Include="PAT_M2\ADC_Test_Out_Vts.pat" />
+    <patcom Include="PAT_M2\CmdTest.pat" />
+    <patcom Include="PAT_M2\CmdTest2.pat" />
+    <patcom Include="PAT_M2\CP_CLK_SEL.pat" />
+    <patcom Include="PAT_M2\EotStandby_Mode.pat" />
+    <patcom Include="PAT_M2\EOT_INIT_CLK.pat" />
+    <patcom Include="PAT_M2\Halver_on.pat" />
+    <patcom Include="PAT_M2\IP_Trim_Read.pat" />
+    <patcom Include="PAT_M2\IP_Trim_Read_Vref.pat" />
+    <patcom Include="PAT_M2\IP_Trim_Write1.pat" />
+    <patcom Include="PAT_M2\IP_Trim_Write2.pat" />
+    <patcom Include="PAT_M2\Off_Margin_Read_Array_FF.pat" />
+    <patcom Include="PAT_M2\Off_Margin_Read_Array_FF2.pat" />
+    <patcom Include="PAT_M2\OSC2M_Default.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim_Code10.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim_Code11.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim_Code12.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim_Code13.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim_Code8.pat" />
+    <patcom Include="PAT_M2\OSC2M_Trim_Code9.pat" />
+    <patcom Include="PAT_M2\POWER_CHANGE.pat" />
+    <patcom Include="PAT_M2\Read_CP3_GDFLG.pat" />
+    <patcom Include="PAT_M2\read_normal.pat" />
+    <patcom Include="PAT_M2\TS_On.pat" />
+    <patcom Include="PAT_M2\VDDLDO_1p8_Trim.pat" />
+    <patcom Include="PAT_M2\VDDLDO_2D2_Trim.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code1.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code10.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code11.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code12.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code13.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code14.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code15.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code16.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code17.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code2.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code3.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code4.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code5.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code6.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code7.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code8.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Code9.pat" />
+    <patcom Include="PAT_M2\VDDLDO_Default.pat" />
+    <patcom Include="PAT_M2\VDDLDO_OUT.pat" />
+    <patcom Include="PAT_M2\Vref_Default.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code10.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code11.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code12.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code5.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code6.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code7.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code8.pat" />
+    <patcom Include="PAT_M2\Vref_emulation_trim_Code9.pat" />
+    <patcom Include="PAT_M2\Vref_OUT.pat" />
+    <patcom Include="PAT_M2\Vref_Trim.pat" />
+    <patcom Include="PAT_M2\Vts_OUT.pat" />
+    <patcom Include="PAT_M2\Write_CP3_GDFLG.pat" />
+    <patcom Include="PAT_M2\write_normal.pat" />
+    <patcom Include="PAT_M2\XT1_CLK1.pat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

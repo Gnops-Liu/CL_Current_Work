@@ -1,0 +1,38 @@
+SET_DEC_FILE "NZ3182_CP.dec" 
+HEADER               
+        VDD_PAD,CMS_PAD,XT1_PAD,GPIO4_PAD,GPIO5_PAD,GPIO6_PAD; 
+                     
+SPM_PATTERN ( CP_CLK_SEL ) { 
+                     
+                     
+//
+//               VCXGGG
+//               DMTPPP
+//               DS1III
+//               ___OOO
+//               PPP456
+//               AAA___
+//               DDDPPP
+//                  AAA
+//                  DDD
+//                
+//                
+//                
+//               
+                 
+                 
+                 
+                *10X000*TS1,RPT 1000;  
+                *10X100*RPT 1000;
+                *10X110*;   //STROBE
+                *10X101*;
+                *10X100*;
+                *10X100*;
+                *10X100*;
+                *10X100*;   //ClkSel MODE
+                *10X101*;   //ClkSel=1 10M CLK
+                *10X10X*RPT 100;
+                *10X10X*STOP;
+                                                                                                                                    
+                   
+}                                                  

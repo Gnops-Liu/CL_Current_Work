@@ -1,0 +1,17 @@
+﻿1>------ Build started: Project: Magnum_OI_Win32, Configuration: Debug Win32 ------
+1>Build started 10/27/2017 11:55:12 AM.
+1>InitializeBuildStatus:
+1>  Touching "C:\nextest\user_tools\src\Magnum_OI\Magnum_OI_SMIC 102717 TT profile\Debug\Magnum_OI_Win32.tlog\unsuccessfulbuild".
+1>ClCompile:
+1>  All outputs are up-to-date.
+1>ResourceCompile:
+1>  All outputs are up-to-date.
+1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/PROFILE' specification
+1>micro-profiler.initializer.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+1>     Creating library C:\nextest\user_tools\src\Magnum_OI\Magnum_OI_SMIC 102717 TT profile\Debug\Magnum_OI_Win32.lib and object C:\nextest\user_tools\src\Magnum_OI\Magnum_OI_SMIC 102717 TT profile\Debug\Magnum_OI_Win32.exp
+1>LINK : fatal error LNK1201: error writing to program database 'C:\nextest\user_tools\src\Magnum_OI\Magnum_OI_SMIC 102717 TT profile\Debug\Magnum_OI_Win32.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+1>
+1>Build FAILED.
+1>
+1>Time Elapsed 00:00:00.29
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
